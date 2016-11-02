@@ -1,4 +1,5 @@
-module Namespace.State {
+/// <reference path="../../refs.d.ts" />
+module GameApp.State {
     export class Game extends Phaser.State {
         create() {
             var img = this.add.sprite(this.game.world.centerX, this.game.world.centerY, 'phaser-logo');

@@ -1,4 +1,6 @@
-module Namespace.Entity {
+/// <reference path="../../refs.d.ts" />
+/// <reference path="../game.ts" />
+module GameApp.Entity {
     export class PreloadBar {
         game:Game;
         width:number;

@@ -1,4 +1,6 @@
-module Namespace.State {
+/// <reference path="../../refs.d.ts" />
+/// <reference path="../entity/preload-bar.ts" />
+module GameApp.State {
     export class Preloader extends Phaser.State {
         loadingBar:Entity.PreloadBar;
 

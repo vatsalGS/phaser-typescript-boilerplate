@@ -1,13 +1,15 @@
 /// <reference path="../refs.d.ts" />
-
-module Namespace {
+/// <reference path="state/game.ts" />
+/// <reference path="state/preloader.ts" />
+module GameApp {
     export class Game extends Phaser.Game {
 
         constructor() {
             super({
                 width: window.innerWidth,
                 height: window.innerHeight,
-                renderer: Phaser.AUTO
+                renderer: Phaser.AUTO,
+                forceSetTimeOut: false
             });
 
             this.state.add('preloader', State.Preloader, true);
@@ -17,5 +19,5 @@ module Namespace {
 }
 
 // export Game to window
-var Game = Namespace.Game;
+var Game = GameApp.Game;
 

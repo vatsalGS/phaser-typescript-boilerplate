@@ -1,5 +1,6 @@
 .idea
 .tscache
+.vscode
 .DS_Store
 src/scripts/.baseDir.ts
 node_modules
